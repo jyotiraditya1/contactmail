@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------*/
+/*---------------[DROPDOWN MENU]------------------*/
+/*------------------------------------------------*/		
+
+ul.nav {
+	font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0px 0px 0px 1px;
+	z-index:999
+}
+
+ul.nav li {
+	list-style:none;
+	margin:0 0px;
+	z-index:999
+}
+ul.nav li a {
+	height:28px;
+	line-height:17px;
+	padding:13px 25px 0px 25px;
+}
+ul.nav > li.current_page_item > a, ul.nav > li.current-cat > a {
+	background-color:#fff;
+	color:#333;	
+}
+ul.nav li a {
+	
+	font-size: 15px;
+	color: #0067b2;
+	text-decoration:none
+}
+ul.nav li.abc a{
+	background:#0067b2;
+	color:#fff
+}
+ul.nav > li > a {
+	/*text-shadow: -1px -1px 1px #2b7dbc;*/text-transform: uppercase; 
+}
+ul.nav > li.sf-ul.sfHover {
+
+	
+}
+ul.nav > li.sf-ul.sfHover > a , ul.nav > li > a:hover {
+	
+	background:#0067b2;
+	display: block;
+	color: #fff;
+	text-shadow: none;
+}
+ul.nav li a:hover {
+	background-color:#0067b2;
+	color:#fff
+}
+ul.nav > li.current_page_item > a, ul.nav > li.current-cat > a, ul.nav > li > a:hover {
+	/*text-shadow: 0px 0px 10px #ffffff;*/
+}
+
+ul.nav li ul li{
+	
+	border-bottom:1px solid #fff;
+	background:#0067b2;
+	color:#fff;
+	height:35px;
+	line-height:35px;
+	display:block ;
+	padding:0 0 0 10px
+}
+ul.nav li ul a {
+	color: #ddd;
+}
+ul.nav li li a {
+	padding: 0px;
+}
+ul.nav li ul {
+	/*background: #ffffff url(images/dropdown-bottom.png) repeat-x bottom left;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+	padding: 4px 0px 17px;*/
+}
+ul.nav li ul{
+	margin-top:10px;
+
+
+}
+ul.nav li ul li {
+	border-bottom:#fff 1px solid;
+	border-radius:0;
+	margin:0;
+	width: 184px;
+	
+}
+
+ul.nav li ul li:hover { background-color:#f4f4f4; color:#333333}
+
+ul.nav li ul li a {
+	display:block;
+	padding:6px 7px 6px 10px;
+	font:12px Arial, Helvetica, sans-serif;
+	border-top:none;
+	background-color:#099;
+	color:#565656;	
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);*/
+	/*-moz-opacity: 0.9;
+	-khtml-opacity: 0;
+	opacity: 0.9;*/
+	text-transform:none;
+
+}
+
+ul.nav li ul li:hover > a {
+	background-image:none;
+	
+	color:#333;
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);*/
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+}
+ul.nav li ul li ul li.bac > a { background-image:none;  padding:8px; width:188px}
+ul.nav li ul li.bac_1 > a { background-image:none;  padding:8px; width:188px}
+ul.nav li ul li ul li ul li > a {background-image:none;  padding-left:8px; width:188px; }
+
+.nav li li:hover ul, ul.nav li li.sfHover ul {
+	left:195px !important;
+	top: 1px !important;
+}
+/*------------------------------------------------*/
+/*---------------[DEFAULT DROPDOWN SETTINGS]---*/
+/*------------------------------------------------*/
+
+.nav ul {
+	position:absolute;
+	top:-999em;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+.nav li {
+	float:left;
+	position:relative;
+}
+.nav a {
+	display:block;
+	float: left;
+}
+.nav li:hover ul, ul.nav li.sfHover ul {
+	left:0px;
+	top:35px;
+}
+.nav li:hover li ul, .nav li.sfHover li ul {
+	top:-999em;
+}
+.nav li li:hover ul, ul.nav li li.sfHover ul {
+	left:203px;
+	top:0px;
+}
+.nav li:hover ul, .nav li li:hover ul {
+	top: -999em;
+}
+.nav li li {
+	display: block;
+	padding: 0px;
+	float: left;
+	height: auto !important;
+}
+.nav li ul {
+	width: 202px;
+	
+}
+.nav li li a:link, .nav li li a:visited {
+	background-color:#fff;
+	
+	background:url('../images/arrowM.gif') 170px 10px no-repeat;
+	color:#fff;
+	display: block;
+	height: auto;
+	float: left;
+	width:184px
+}
+.nav li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+
+.sf-sub-indicator{
+	position:absolute;
+	top:11px;
+	right:2px	
+	}
+
+
+
+
